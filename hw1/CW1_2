@@ -1,0 +1,36 @@
+package my.page;
+
+public class one {
+
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 5;
+        int h = 7;
+        int v = getVolume(a, b, h);
+        System.out.println(v);
+    }
+    public static int getVolume(int a, int b, int h){
+        return a*b*h;
+    }
+
+
+    /*public static void main(String[] args) {
+        double r = 7;
+        double v = getVolume(r);
+        System.out.println (Math.round(v));
+    }
+    public static double getVolume(double r){
+        return ((4*Math.PI*Math.pow(r, 3))/3);
+    }*/
+
+
+    /*public static void main(String[] args) {
+        double r = 5;
+        double h = 7;
+        double v = getVolume(r, h);
+        System.out.println (Math.round(v));
+    }
+    public static double getVolume(double r, double h){
+        return (Math.PI*Math.pow(r, 2)*h);
+    }*/
+}
