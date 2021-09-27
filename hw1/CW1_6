@@ -1,0 +1,37 @@
+import java.util.*;
+class Main16 {
+  public static void main(String[] args) {
+    int size = 15;
+    char [] aB = new char[size];
+    Scanner in = new Scanner(System.in);
+    for(int i = 0; i<size; i++){
+      aB[i] = in.next().charAt(0);
+    }
+    for(int i = 0; i<size; i++){
+      System.out.print(aB[i]);
+    }
+    System.out.println();
+
+    for(int i = 0; i<size; i++){
+      for(int j = 0; j<size-1; j++){
+        if (aB[j]>aB[j+1]){
+          char tmp = aB[j];
+          aB[j] = aB[j+1];
+          aB[j+1] = tmp;     
+        }
+      }
+    }
+    for(int i = 0; i<size; i++){
+      System.out.print(aB[i]);
+    }
+    int mid = size/2+1;
+    char [] aS = new char[5];
+    for(int i = 0; i<5;i++){
+      aS[i] = aB[mid-1+i];
+    }
+    System.out.println();
+    for(int i = 0; i<5; i++){
+      System.out.print(aS[i]);
+    }
+  }
+}
