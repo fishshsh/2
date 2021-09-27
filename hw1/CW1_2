@@ -1,15 +1,14 @@
-package com.company;
-
-public class one {
+import java.util.Scanner;
+public class main1 {
 
     public static void main(String[] args) {
-        int a = 5;
-        int b = 5;
-        int h = 7;
-        int v = getVolume(a, b, h);
+        double a = 2;
+        double b = 2;
+        double h = 3;
+        double v = getVolume(a, b, h);
         System.out.println(v);
     }
-    public static int getVolume(int a, int b, int h){
+    public static double getVolume(double a, double b, double h){
         return a*b*h;
     }
 
