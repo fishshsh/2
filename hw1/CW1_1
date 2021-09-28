@@ -1,0 +1,10 @@
+public class CW1_1 {
+    public static void main(String[] args) {
+        String a = "5";
+        String b = "7";
+        int c = Integer.parseInt(a);
+        double d = Double.parseDouble(b);
+        double f = c + d;
+        System.out.println(f);
+    }
+}
