@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class CW1_2 {
+    public static void main(String[] args) {
+        System.out.println("Выберите фигуру");
+        Scanner figure = new Scanner(System.in);
+        String fig = figure.next();
+        Scanner scanin = new Scanner(System.in);
+        if (fig.equals("параллелепипед")) {
+            System.out.println("Введите значения высоты, длины, ширины");
+            int h = scanin.nextInt();
+            int a = scanin.nextInt();
+            int b = scanin.nextInt();
+            int v1 = (h*a*b);
+            System.out.println("Объём равен: " + v1);
+        }
+
+        else if (fig.equals("шар"))  {
+            System.out.println("Введите значение радиуса");
+            int r = scanin.nextInt();
+            final double pi = 3.14;
+            double v2 = (4*pi*r*r/3);
+            System.out.println("Объём равен: " + v2);
+        }
+
+        else if (fig.equals("цилиндр")) {
+            System.out.println("Введите значения радиуса, высоты");
+            int r = scanin.nextInt();
+            int h = scanin.nextInt();
+            final double pi = 3.14;
+            double v3 = (pi*r*r*h);
+            System.out.println("Объём равен: " + v3);
+        }
+    }
+}
