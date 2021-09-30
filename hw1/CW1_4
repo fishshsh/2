@@ -1,1 +1,20 @@
-v
+public static void main(String args[]) {
+        String A = "y";
+        int a1 = 3;
+        int a2 = 7;
+    do {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число");
+        int C = scanner.nextInt();
+
+        if (C >= a1 && C <= a2) {
+            System.out.println("Входит в промежуток");
+        }
+        else {
+            System.out.println("Не входит в промежуток");
+        }
+        System.out.println("Хотите проверить ещё одно чило? Да - у, нет -n");
+        A = scanner.next();
+    } while (!A.equals("n"));
+    }
+}
