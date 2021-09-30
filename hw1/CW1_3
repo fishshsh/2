@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class CW1_3 {
+    public static void main(String args[]) {
+        int a1 = 3;
+        int a2 = 7;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число");
+        int C = scanner.nextInt();
+
+        if (C >= a1 && C <= a2) {
+            System.out.println("В промежутке");
+        }
+        else {
+            System.out.println("Нет в промежутке");
+        }
+    }
+}
