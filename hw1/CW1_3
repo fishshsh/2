@@ -9,10 +9,10 @@ public class CW1_3 {
         int C = scanner.nextInt();
 
         if (C >= a1 && C <= a2) {
-            System.out.println("В промежутке");
+            System.out.println("Входит в промежуток");
         }
         else {
-            System.out.println("Нет в промежутке");
+            System.out.println("Не входит в промежуток");
         }
     }
 }
