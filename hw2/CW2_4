@@ -1,0 +1,32 @@
+public class Cylinder {
+    protected void S1 (int h, int r) {
+        double square = (2 * 3.14 * r * h + 2 * 3.14 * r * r);
+        System.out.println("площадь поверхности = " + square);
+    }
+    protected void V1 (int h, int r) {
+        double volume = (3.14 * r * r * h);
+        System.out.println("oбъем = " + volume);
+    }
+
+    protected void S2 (double h, double r) {
+        double square = (2 * 3.14 * r * h + 2 * 3.14 * r * r);
+        System.out.println("площадь поверхности = " + square);
+    }
+    protected void V2 (double h, double r) {
+        double volume = (3.14 * r * r * h);
+        System.out.println("oбъем = " + volume);
+    }
+
+    protected void S3 (String a, String b) {
+        double h = Double.parseDouble(a);
+        double r = Double.parseDouble(b);
+        double square = (2 * 3.14 * r * h + 2 * 3.14 * r * r);
+        System.out.println("площадь поверхности = " + square);
+    }
+    protected void V3 (String a, String b) {
+        double h = Double.parseDouble(a);
+        double r = Double.parseDouble(b);
+        double volume = (3.14 * r * r * h);
+        System.out.println("oбъем: " + volume);
+    }
+}
