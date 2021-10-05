@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class MathUtils {
+    public static void S(int a, int b) {
+        int S = a + b;
+        System.out.println("сумма S = " + S);
+    }
+    public static void R(int a, int b) {
+        int R = a - b;
+        System.out.println("разность R = " + R);
+    }
+    public static void P(int a, int b) {
+        int P = a * b;
+        System.out.println("произведение P = " + P);
+    }
+    public static void L(int a, int b) {
+        int L = x / y;
+        System.out.println("деление L = " + L);
+    }
+    public static void C(int a, int b) {
+        double C = Math.pow(a, b);
+        System.out.println("степень C = " + C);
+    }
+    public static void F(int a) {
+        int F = 1;
+        for (int i = 1; i <= x; i++) {
+            F = F * i;
+        }
+        System.out.println("факториал F =" + F);
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите два числа: ");
+        String a = scanner.nextLine();
+        String b = scanner.nextLine();
+        int N1 = Integer.parseInt(x);
+        int N2 = Integer.parseInt(y);
+        MathUtils.S(N1,N2);
+        MathUtils.R(N1,N2);
+        MathUtils.P(N1,N2);
+        MathUtils.L(N1,N2);
+        MathUtils.C(N1,N2);
+        MathUtils.F(N1,N2);
+    }
+}
